@@ -1,0 +1,212 @@
+
+> lama-dev-next-dashboard@0.1.0 build
+> next build
+
+(node:17236) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/UIT/HK5/FE/Next-Dashboard-UI/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to D:\UIT\HK5\FE\Next-Dashboard-UI\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ▲ Next.js 14.2.5
+
+   Creating an optimized production build ...
+(node:14304) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/UIT/HK5/FE/Next-Dashboard-UI/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to D:\UIT\HK5\FE\Next-Dashboard-UI\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Failed to compile.
+
+./src/app/(dashboard)/(list)/quotations/[quotationID]/page.tsx
+Error: 
+  [31mx[0m The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+   ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(dashboard)\(list)\quotations\[quotationID]\page.tsx[0m:1:1]
+ [2m1[0m | import FetchingLoadingStatus from "@/components/FetchingLoadingStatus";
+ [2m2[0m | "use client";
+   : [31;1m^^^^^^^^^^^^^[0m
+ [2m3[0m | import useGetQuotationDetail from "@/fetching/quotation/getQuotationDetail";
+ [2m4[0m | import { ApiResponseListAllQuotation } from "@/lib/data.quotation";
+ [2m4[0m | import { useParams } from "next/navigation";
+   `----
+
+  [31mx[0m You're importing a component that needs useParams. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  [31m|[0m Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  [31m|[0m 
+  [31m|[0m 
+   ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(dashboard)\(list)\quotations\[quotationID]\page.tsx[0m:2:1]
+ [2m2[0m | "use client";
+ [2m3[0m | import useGetQuotationDetail from "@/fetching/quotation/getQuotationDetail";
+ [2m4[0m | import { ApiResponseListAllQuotation } from "@/lib/data.quotation";
+ [2m5[0m | import { useParams } from "next/navigation";
+   : [31;1m         ^^^^^^^^^[0m
+ [2m6[0m | import { moneyFormat } from "@/util/moneyFormat";
+ [2m7[0m | import { useCallback, useEffect, useRef, useState } from "react";
+ [2m7[0m | import { FileText, Calendar, User, Package, DollarSign, Mail, Clock, Download, ArrowLeft } from "lucide-react";
+   `----
+
+  [31mx[0m You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  [31m|[0m Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  [31m|[0m 
+  [31m|[0m 
+   ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(dashboard)\(list)\quotations\[quotationID]\page.tsx[0m:4:1]
+ [2m4[0m | import { ApiResponseListAllQuotation } from "@/lib/data.quotation";
+ [2m5[0m | import { useParams } from "next/navigation";
+ [2m6[0m | import { moneyFormat } from "@/util/moneyFormat";
+ [2m7[0m | import { useCallback, useEffect, useRef, useState } from "react";
+   : [31;1m                      ^^^^^^^^^[0m
+ [2m8[0m | import { FileText, Calendar, User, Package, DollarSign, Mail, Clock, Download, ArrowLeft } from "lucide-react";
+ [2m9[0m | import QuotationStatusComponent from "../QuotationStatusComponent";
+ [2m9[0m | import { useRouter } from "next/navigation";
+   `----
+
+  [31mx[0m You're importing a component that needs useRef. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  [31m|[0m Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  [31m|[0m 
+  [31m|[0m 
+   ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(dashboard)\(list)\quotations\[quotationID]\page.tsx[0m:4:1]
+ [2m4[0m | import { ApiResponseListAllQuotation } from "@/lib/data.quotation";
+ [2m5[0m | import { useParams } from "next/navigation";
+ [2m6[0m | import { moneyFormat } from "@/util/moneyFormat";
+ [2m7[0m | import { useCallback, useEffect, useRef, useState } from "react";
+   : [31;1m                                 ^^^^^^[0m
+ [2m8[0m | import { FileText, Calendar, User, Package, DollarSign, Mail, Clock, Download, ArrowLeft } from "lucide-react";
+ [2m9[0m | import QuotationStatusComponent from "../QuotationStatusComponent";
+ [2m9[0m | import { useRouter } from "next/navigation";
+   `----
+
+  [31mx[0m You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  [31m|[0m Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  [31m|[0m 
+  [31m|[0m 
+   ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(dashboard)\(list)\quotations\[quotationID]\page.tsx[0m:4:1]
+ [2m4[0m | import { ApiResponseListAllQuotation } from "@/lib/data.quotation";
+ [2m5[0m | import { useParams } from "next/navigation";
+ [2m6[0m | import { moneyFormat } from "@/util/moneyFormat";
+ [2m7[0m | import { useCallback, useEffect, useRef, useState } from "react";
+   : [31;1m                                         ^^^^^^^^[0m
+ [2m8[0m | import { FileText, Calendar, User, Package, DollarSign, Mail, Clock, Download, ArrowLeft } from "lucide-react";
+ [2m9[0m | import QuotationStatusComponent from "../QuotationStatusComponent";
+ [2m9[0m | import { useRouter } from "next/navigation";
+   `----
+
+Import trace for requested module:
+./src/app/(dashboard)/(list)/quotations/[quotationID]/page.tsx
+
+./src/app/(dashboard)/(list)/users/page.tsx
+Error: 
+  [31mx[0m The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+   ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(dashboard)\(list)\users\page.tsx[0m:1:1]
+ [2m1[0m | import FetchingLoadingStatus from "@/components/FetchingLoadingStatus";
+ [2m2[0m | "use client"
+   : [31;1m^^^^^^^^^^^^[0m
+ [2m3[0m | import React, { useEffect, useState } from 'react';
+ [2m4[0m | import { Search, Users, UserPlus, User } from 'lucide-react';
+ [2m4[0m | import PageNavigationComponent from '@/components/PageNavigationComponent';
+   `----
+
+  [31mx[0m You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  [31m|[0m Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  [31m|[0m 
+  [31m|[0m 
+   ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(dashboard)\(list)\users\page.tsx[0m:1:1]
+ [2m1[0m | import FetchingLoadingStatus from "@/components/FetchingLoadingStatus";
+ [2m2[0m | "use client"
+ [2m3[0m | import React, { useEffect, useState } from 'react';
+   : [31;1m                ^^^^^^^^^[0m
+ [2m4[0m | import { Search, Users, UserPlus, User } from 'lucide-react';
+ [2m5[0m | import PageNavigationComponent from '@/components/PageNavigationComponent';
+ [2m5[0m | import Image  from 'next/image';
+   `----
+
+  [31mx[0m You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  [31m|[0m Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  [31m|[0m 
+  [31m|[0m 
+   ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(dashboard)\(list)\users\page.tsx[0m:1:1]
+ [2m1[0m | import FetchingLoadingStatus from "@/components/FetchingLoadingStatus";
+ [2m2[0m | "use client"
+ [2m3[0m | import React, { useEffect, useState } from 'react';
+   : [31;1m                           ^^^^^^^^[0m
+ [2m4[0m | import { Search, Users, UserPlus, User } from 'lucide-react';
+ [2m5[0m | import PageNavigationComponent from '@/components/PageNavigationComponent';
+ [2m5[0m | import Image  from 'next/image';
+   `----
+
+  [31mx[0m You're importing a component that needs useRouter. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  [31m|[0m Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  [31m|[0m 
+  [31m|[0m 
+    ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(dashboard)\(list)\users\page.tsx[0m:5:1]
+ [2m 5[0m | import PageNavigationComponent from '@/components/PageNavigationComponent';
+ [2m 6[0m | import Image  from 'next/image';
+ [2m 7[0m | import { useUser } from '@/providers/UserProvider';
+ [2m 8[0m | import { useRouter } from 'next/navigation';
+    : [31;1m         ^^^^^^^^^[0m
+ [2m 9[0m | import { CheckCircle, XCircle } from "lucide-react";
+ [2m10[0m | 
+ [2m10[0m | const Active = () => {
+    `----
+
+Import trace for requested module:
+./src/app/(dashboard)/(list)/users/page.tsx
+
+./src/app/(user)/profile/page.tsx
+Error: 
+  [31mx[0m The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+   ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(user)\profile\page.tsx[0m:1:1]
+ [2m1[0m | import FetchingLoadingStatus from "@/components/FetchingLoadingStatus";
+ [2m2[0m | "use client";
+   : [31;1m^^^^^^^^^^^^^[0m
+ [2m3[0m | 
+ [2m4[0m | import Image from "next/image";
+ [2m4[0m | import { motion } from "framer-motion";
+   `----
+
+  [31mx[0m You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  [31m|[0m Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  [31m|[0m 
+  [31m|[0m 
+    ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(user)\profile\page.tsx[0m:17:1]
+ [2m17[0m | } from "lucide-react";
+ [2m18[0m | import Link from "next/link";
+ [2m19[0m | import useGetInfo from "@/fetching/profile/getInfo";
+ [2m20[0m | import { useCallback, useEffect, useState } from "react";
+    : [31;1m                      ^^^^^^^^^[0m
+ [2m21[0m | import { GetInfoResponse } from "@/lib/data.authentication";
+ [2m22[0m | import { useRouter } from "next/navigation";
+ [2m22[0m | import { useAuthentication } from "@/providers/AuthenticationProvider";
+    `----
+
+  [31mx[0m You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  [31m|[0m Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  [31m|[0m 
+  [31m|[0m 
+    ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(user)\profile\page.tsx[0m:17:1]
+ [2m17[0m | } from "lucide-react";
+ [2m18[0m | import Link from "next/link";
+ [2m19[0m | import useGetInfo from "@/fetching/profile/getInfo";
+ [2m20[0m | import { useCallback, useEffect, useState } from "react";
+    : [31;1m                                 ^^^^^^^^[0m
+ [2m21[0m | import { GetInfoResponse } from "@/lib/data.authentication";
+ [2m22[0m | import { useRouter } from "next/navigation";
+ [2m22[0m | import { useAuthentication } from "@/providers/AuthenticationProvider";
+    `----
+
+  [31mx[0m You're importing a component that needs useRouter. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  [31m|[0m Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  [31m|[0m 
+  [31m|[0m 
+    ,-[[36;1;4mD:\UIT\HK5\FE\Next-Dashboard-UI\src\app\(user)\profile\page.tsx[0m:19:1]
+ [2m19[0m | import useGetInfo from "@/fetching/profile/getInfo";
+ [2m20[0m | import { useCallback, useEffect, useState } from "react";
+ [2m21[0m | import { GetInfoResponse } from "@/lib/data.authentication";
+ [2m22[0m | import { useRouter } from "next/navigation";
+    : [31;1m         ^^^^^^^^^[0m
+ [2m23[0m | import { useAuthentication } from "@/providers/AuthenticationProvider";
+ [2m24[0m | import useUpdateInfo from "@/fetching/profile/updateInfo";
+ [2m24[0m | import { useNotification } from "@/providers/NotificationProvider";
+    `----
+
+Import trace for requested module:
+./src/app/(user)/profile/page.tsx
+
+
+> Build failed because of webpack errors

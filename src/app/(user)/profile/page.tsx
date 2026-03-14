@@ -1,5 +1,7 @@
-import FetchingLoadingStatus from "@/components/FetchingLoadingStatus";
+
 "use client";
+
+import FetchingLoadingStatus from "@/components/FetchingLoadingStatus";
 
 import Image from "next/image";
 import { motion } from "framer-motion";

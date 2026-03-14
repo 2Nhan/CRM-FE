@@ -1,5 +1,6 @@
-import FetchingLoadingStatus from "@/components/FetchingLoadingStatus";
 "use client"
+
+import FetchingLoadingStatus from "@/components/FetchingLoadingStatus";
 import React, { useEffect, useState } from 'react';
 import { Search, Users, UserPlus, User } from 'lucide-react';
 import PageNavigationComponent from '@/components/PageNavigationComponent';
